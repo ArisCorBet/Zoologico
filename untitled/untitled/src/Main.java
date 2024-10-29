@@ -9,20 +9,21 @@ public class Main {
         cliente.nombre = "Juan Perez";
         cliente.cedula = "123456789";
         System.out.println("Cliente: " + cliente.nombre);
+        System.out.println("cedula: " + cliente.cedula);
 
         // Crear un taquillero y vender boletos
         Taquillero taquillero = new Taquillero();
         taquillero.nombre = "Ana Gomez";
         taquillero.especializacion = "Venta de boletos";
         taquillero.revisarAnimal();
-        System.out.println("Taquillero: " + taquillero.nombre);
+        System.out.println("Taquillero: " + taquillero.nombre + "\n" + taquillero.especializacion);
 
         // Crear un veterinario
         Veterinario veterinario = new Veterinario();
         veterinario.nombre = "Carlos Ruiz";
         veterinario.especializacion = "Mamíferos";
         veterinario.revisarAnimal();
-        System.out.println("Veterinario: " + veterinario.nombre);
+        System.out.println("Veterinario: " + veterinario.nombre + "\n" + veterinario.especializacion);
 
         // Crear boletos
         Boleto boleto1 = new Boleto();
@@ -59,23 +60,27 @@ public class Main {
         leon.alimentar();
         leon.revisarSalud();
 
-        System.out.println("Animales creados: " + leon.nombre + " y " + tigre.nombre);
+        System.out.println("Animal caracteristica: " + "\n" + leon.nombre + "\n" + "edad: " + leon.edad + "\n" + "animal: " + leon.especie + "\n" + "sexo: " + leon.sexo + "\n" + "nombre: " + tigre.nombre + "\n" + "animal: " + tigre.especie + "\n" + "edad: " + tigre.edad + "\n" + "sexo: " + tigre.sexo);
 
         // Crear un cuidador
         Cuidador cuidador = new Cuidador();
         cuidador.nombre = "Pedro Castillo";
         cuidador.especializacionEspecie = "Felinos";
         cuidador.cuidarAnimal();
-        System.out.println("Cuidador: " + cuidador.nombre);
+        System.out.println("Cuidador: " + cuidador.nombre + "\n" + "especializacion: " + cuidador.especializacionEspecie);
+
 
         // Crear alimentación para animales
         Alimentacion alimentacionLeon = new Alimentacion();
         alimentacionLeon.tipoAlimentacion = "Carnívoro";
         alimentacionLeon.horario = "10:00 AM";
+        System.out.println("Alimentacion: "  +  alimentacionLeon.tipoAlimentacion + "\n" + "Horario: " + alimentacionLeon.horario);
+
 
         List<Alimentacion> listaAlimentacion = new ArrayList<>();
         listaAlimentacion.add(alimentacionLeon);
         leon.alimentacion = listaAlimentacion;
+
 
         // Crear historial de salud para el león
         HistorialSalud historialLeon = new HistorialSalud();
@@ -83,7 +88,7 @@ public class Main {
         historialLeon.fecha = new Date();
         historialLeon.detallesSalud = "Salud óptima";
         historialLeon.actualizarHistorial();
-        System.out.println("Historial de salud actualizado para: " + leon.nombre);
+        System.out.println("Historial de salud actualizado para: " + leon.nombre + "\n" + "fecha: " + historialLeon.fecha + "\n" + "Salud: " + historialLeon.detallesSalud);
 
         // Crear hábitat y asignar animales
         Habitat habitatSelva = new Habitat();
@@ -93,7 +98,7 @@ public class Main {
         habitatSelva.controlarTemperatura();
         habitatSelva.limpiar();
 
-        System.out.println("Hábitat creado: " + habitatSelva.nombre);
+        System.out.println("Hábitat creado: " + habitatSelva.nombre + "\n" + "tipo: " + habitatSelva.tipo + "\n" + "temperatura: " + habitatSelva.temperatura);
 
         // Crear gestión de animales
         GestionAnimales gestionAnimales = new GestionAnimales();
@@ -115,6 +120,6 @@ public class Main {
         cuidado.gestionarLimpieza();
         cuidado.gestionarCuidado();
 
-        System.out.println("Responsable de cuidado: " + cuidado.responsable);
+        System.out.println("Responsable de cuidado: " + cuidado.responsable + "\n" + "horarioLimpieza: " + cuidado.horarioLimpieza);
     }
 }
