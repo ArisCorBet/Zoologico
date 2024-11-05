@@ -13,4 +13,5 @@ Integrantes:
   
 Se presenta el repositorio el cual consta de un archivo que muestra el Diagrama de clases desarrollado y una carpeta la cual mantiene el código pasado al lenguaje de programaciòn Java. A continuación se adjunta una imagen del diagrama de clases desarrollado:
 
-![image](https://github.com/user-attachments/assets/e45b8151-97ef-422d-a44a-07bd78b2275c)
+![image](https://github.com/user-attachments/assets/aee634ca-882f-4943-8637-aa5f3754eecb)
+
